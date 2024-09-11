@@ -2,8 +2,8 @@
 #include <bits/stdc++.h>
 #include <windows.h> 
 #include <unistd.h>
-#include <cstdlib> // ÓÃÓÚrand()ºÍsrand()  
-#include <ctime>   // ÓÃÓÚtime()  
+#include <cstdlib> // ç”¨äºrand()å’Œsrand()  
+#include <ctime>   // ç”¨äºtime()  
   
 using namespace std;  
 inline void setFontSize(int a, int b) 
@@ -27,32 +27,26 @@ inline void setFontSize(int a, int b)
 }
   
 int main() {  
-    // ³õÊ¼»¯Ñ§ÉúÃûµ¥  
+    // åˆå§‹åŒ–å­¦ç”Ÿåå•  
     string students[] = {
-    "ÕÔÀÖÍ©", "Íõ×ÏÒÁ", "ÕÅÒÕêØ", "Îâ³¿ºÆ", "ÀîØ·³Ì", "Åí¿¡Ùâ", "Íõº£Áé", "ÍõÔ¶Ñó",
-    "³Â¼Îä±", "Â¬Òİº½", "ÀèÃúºÆ", "ºÎêÅ½Ü", "³ÂË¼î£", "ÌÆè÷ğ©", "È«½Üî£", "»Æå«ÁÜ",
-    "ÖìË¼Ô´", "Åíì÷", "°¢ÈŞá°½Ü", "³ÂêÅÈÚ", "Íõè÷Ä«Ğù", "³Â×ÉÎÅ", "Ìïíµ", "Àî×¿Ğù",
-    "ËÎÔÃ¼Î", "Îº³ÉÓğ", "ÀîÉÙåû", "ÖÜË¼º¬", "³µÂŞî£Ş±", "ÌÆÓÚº­", "ÕÅÓê³½", "»Æ¿¡Áú",
-    "ÕÅÒë¼Î", "·¿×Ó½Ü", "¸ßÃ÷Óî", "ÂŞìÍ", "Ô¬¿¡ĞÛ", "Àµµ±å°", "Íõ×ÏÈ¨", "Ô¬î£³½",
-    "ÖÜè¤Çå", "ÎâºÆÓî", "Ã«ºÆÓî", "ËïÇ§ÑÅ", "ÔøŞÈÇç", "¸ßç÷ÁÜ", "³ÂÒ»¼Î", "ÌÆñ´ĞÄ",
-    "ÇäÓîÏª", "ÒüË¼æµ", "ÁõãüÓï", "ÁÖÈıÁ¦"
+
 };
  
-    int numStudents = sizeof(students) / sizeof(students[0]); // ¼ÆËãÑ§ÉúÈËÊı  
+    int numStudents = sizeof(students) / sizeof(students[0]); // è®¡ç®—å­¦ç”Ÿäººæ•°  
   
-    // ³õÊ¼»¯Ëæ»úÊı·¢ÉúÆ÷  
-    srand(static_cast<unsigned int>(time(0))); // Ê¹ÓÃµ±Ç°Ê±¼ä×÷ÎªËæ»úÊıÖÖ×Ó  
+    // åˆå§‹åŒ–éšæœºæ•°å‘ç”Ÿå™¨  
+    srand(static_cast<unsigned int>(time(0))); // ä½¿ç”¨å½“å‰æ—¶é—´ä½œä¸ºéšæœºæ•°ç§å­  
   
-    // Éú³ÉÒ»¸öËæ»úÊıË÷Òı£¬ÓÃÓÚËæ»úÑ¡ÔñÑ§Éú  
+    // ç”Ÿæˆä¸€ä¸ªéšæœºæ•°ç´¢å¼•ï¼Œç”¨äºéšæœºé€‰æ‹©å­¦ç”Ÿ  
     int randomIndex = rand() % numStudents;  
     setFontSize(30,30);
-    // Êä³ö±»µãÃûµÄÑ§Éú  
-	cout << "µãÃûÆ÷ Powered by C++ (GCC) C:opygm.cn ÖÆ×÷£ºÕÅÒë¼Î"<<endl;
-    cout << "Ñ§Éú£º" << students[randomIndex] << endl;   
-    cout << "Ñ§Éú£º" << students[randomIndex] << endl; 
-    cout << "Ñ§Éú£º" << students[randomIndex] << endl; 
-    cout << "Ñ§Éú£º" << students[randomIndex] << endl; 
-    cout << "Ñ§Éú£º" << students[randomIndex] << endl; 
+    // è¾“å‡ºè¢«ç‚¹åçš„å­¦ç”Ÿ  
+	cout << "ç‚¹åå™¨ Powered by C++ (GCC) C:opygm.cn åˆ¶ä½œï¼šå¼ è¯‘å˜‰"<<endl;
+    cout << "å­¦ç”Ÿï¼š" << students[randomIndex] << endl;   
+    cout << "å­¦ç”Ÿï¼š" << students[randomIndex] << endl; 
+    cout << "å­¦ç”Ÿï¼š" << students[randomIndex] << endl; 
+    cout << "å­¦ç”Ÿï¼š" << students[randomIndex] << endl; 
+    cout << "å­¦ç”Ÿï¼š" << students[randomIndex] << endl; 
     sleep(10); 
     return 0;  
 }
